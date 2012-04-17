@@ -1,7 +1,7 @@
 ## Haxe Bootstrap
 
 This very simple library makes it easier to use 
-**[Twitter Bootstrap Javascript components](http://twitter.github.com/bootstrap/javascript.html)**
+**[Twitter Bootstrap Javascript plugins](http://twitter.github.com/bootstrap/javascript.html)**
 in an **[haXe/JS](http://www.haxejs.org/)** project
 
 ### Getting started
@@ -16,7 +16,7 @@ Include haxe-boostrap to your haXe project's classpath, with `-cp haxe-bootstrap
 ### Embedding
 
 By default, the library will take care of embedding the appropriate 
-javascript files from bootstrap, so you don't need to link them manually.
+javascript code from bootstrap, so you don't need to link them manually.
 
 You may need to set the path to your local bootstrap repo, though, which you can do either in your build.hxml file:
 
@@ -26,10 +26,10 @@ Or in your code:
 
     bootstrap.Lib.setPath('yet-another-path')
     
+You can also disable embedding with the `-D noEmbedBootstrap` flag.
+    
 The default path is "lib/bootstrap".
 The `setPath` macro uses `haxe.macro.Tools.includeFile`.
-
-You can also disable embedding with the `-D noEmbedBootstrap` flag.
 
 ### Using Bootstrap
 
