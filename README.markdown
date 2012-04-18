@@ -2,7 +2,7 @@
 
 This very simple library makes it easier to use 
 **[Twitter Bootstrap Javascript plugins](http://twitter.github.com/bootstrap/javascript.html)**
-in an **[haXe/JS](http://www.haxejs.org/)** project
+in an **[Haxe/JS](http://www.haxejs.org/)** project
 
 ### Getting started
 
@@ -33,7 +33,7 @@ The `setPath` macro uses `haxe.macro.Tools.includeFile`.
 
 ### Using Bootstrap
 
-You can then access bootstrap methods in your haXe/JS class with the `using` keyword :
+You can then access bootstrap methods in your Haxe/JS class with the `using` keyword :
 
     using js.bootstrap.Button;
     // ...
