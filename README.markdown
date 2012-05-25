@@ -48,3 +48,4 @@ The following plugins are currently implemented:
  - **[Modals](http://twitter.github.com/bootstrap/javascript.html#modals)** `using js.bootstrap.Dropdown;`
  - **[Popovers](http://twitter.github.com/bootstrap/javascript.html#popovers)** `using js.bootstrap.Popover;`
  - **[Tooltips](http://twitter.github.com/bootstrap/javascript.html#tooltips)** `js.bootstrap.Tooltip;`
+ - **[Alerts](http://twitter.github.com/bootstrap/javascript.html#alerts)** `js.bootstrap.Alert;
