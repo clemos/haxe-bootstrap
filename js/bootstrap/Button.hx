@@ -14,9 +14,9 @@ class Button {
 	public static inline function buttonReset( j : js.JQuery ) : js.JQuery 
 		return untyped j.button( "reset" )
 
+	#if !noEmbedBootstrap
 	public static function __init__() 
-		#if !noEmbedBootstrap
 		bootstrap.Lib.includeFile("js/bootstrap-button.js")
-		#end
-
+	#end
+	
 }

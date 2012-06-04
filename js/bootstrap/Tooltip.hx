@@ -23,10 +23,10 @@ class Tooltip {
 	public static inline function tooltipHide( j : js.JQuery ) : js.JQuery 
 		return untyped j.tooltip( "hide" )
 
+	#if !noEmbedBootstrap
 	public static function __init__(){
-		#if !noEmbedBootstrap
 		bootstrap.Lib.includeFile( "js/bootstrap-tooltip.js" );
-		#end
 	}
+	#end
 
 }

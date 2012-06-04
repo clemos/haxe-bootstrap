@@ -25,11 +25,10 @@ class Popover {
 		return untyped j.popover( "hide" )
 	
 
+	#if !noEmbedBootstrap
 	public static function __init__(){
-		#if !noEmbedBootstrap
 		bootstrap.Lib.includeFile("js/bootstrap-tooltip.js");
 		bootstrap.Lib.includeFile("js/bootstrap-popover.js");
-		#end
-
 	}
+	#end
 }

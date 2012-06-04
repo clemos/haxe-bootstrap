@@ -6,9 +6,9 @@ class Dropdown {
 		return untyped j.dropdown()
 	
 
+	#if !noEmbedBootstrap
 	public static function __init__()
-		#if !noEmbedBootstrap
 		bootstrap.Lib.includeFile("js/bootstrap-dropdown.js")
-		#end
+	#end
 	
 }

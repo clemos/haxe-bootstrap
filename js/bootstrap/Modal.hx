@@ -20,7 +20,9 @@ class Modal {
 	public static inline function modalHide( j : js.JQuery ) : js.JQuery 
 		return untyped j.modal( "hide" )
 		
+	#if !noEmbedBootstrap
 	public static function __init__() 
-		#if !noEmbedBootstrap bootstrap.Lib.includeFile("js/bootstrap-modal.js") #end
+		bootstrap.Lib.includeFile("js/bootstrap-modal.js") 
+	#end
 	
 }
