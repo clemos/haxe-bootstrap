@@ -12,7 +12,7 @@ class Lib {
 	}
 
 	macro public static function includeFile( filename : String ){
-		return Context.parse( "haxe.macro.Tools.includeFile(\"" + path + "/" + filename +"\")" , Context.currentPos() );
+		return Context.parse( "haxe.macro.Compiler.includeFile(\"" + path + "/" + filename +"\")" , Context.currentPos() );
 	}
 
 }
