@@ -1,4 +1,5 @@
 package js.bootstrap;
+  using js.bootstrap.Popover;
 
 typedef PopoverOptions = {
 	?animation 	: Bool,
@@ -15,20 +16,14 @@ class Popover {
 		return untyped j.popover( opts );
 	}
 
-	public static inline function popoverToggle( j : js.JQuery ) : js.JQuery 
-		return untyped j.popover( "toggle" )
-		
-	public static inline function popoverShow( j : js.JQuery ) : js.JQuery 
-		return untyped j.popover( "show" )
-	
-	public static inline function popoverHide( j : js.JQuery ) : js.JQuery 
-		return untyped j.popover( "hide" )
-	
+	public static inline function popoverToggle( j : js.JQuery ) { return j.popover( "toggle" ); }
+	public static inline function popoverShow( j : js.JQuery )   { return j.popover( "show" ); }
+	public static inline function popoverHide( j : js.JQuery )   { return j.popover( "hide" ); }
 
-	#if !noEmbedBootstrap
-	public static function __init__(){
+#if !noEmbedBootstrap
+	public static function __init__() {
 		bootstrap.Lib.includeFile("js/bootstrap-tooltip.js");
 		bootstrap.Lib.includeFile("js/bootstrap-popover.js");
 	}
-	#end
+#end
 }
