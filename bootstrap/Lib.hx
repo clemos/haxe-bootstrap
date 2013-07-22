@@ -11,8 +11,9 @@ class Lib {
 		return Context.parse("{}", Context.currentPos() );
 	}
 
-	macro public static function includeFile( filename : String ){
-		return Context.parse( "haxe.macro.Compiler.includeFile(\"" + path + "/" + filename +"\")" , Context.currentPos() );
+	public static function includeFile( filename : String ){
+#if haxe3	return Context.parse( "haxe.macro.Compiler.includeFile(\"" + path + "/" + filename +"\")" , Context.currentPos() );
+#else		return Context.parse( "haxe.macro.Tools.includeFile(\"" + path + "/" + filename +"\")" , Context.currentPos() ); #end
 	}
 
 }
