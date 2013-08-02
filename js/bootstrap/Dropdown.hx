@@ -12,5 +12,5 @@ class Dropdown {
 		bootstrap.Lib.includeFile("js/bootstrap-dropdown.js");
 	}
 	#end
-	
+
 }
