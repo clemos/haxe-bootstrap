@@ -49,3 +49,4 @@ The following plugins are currently implemented:
  - **[Popovers](http://twitter.github.com/bootstrap/javascript.html#popovers)** `using js.bootstrap.Popover;`
  - **[Tooltips](http://twitter.github.com/bootstrap/javascript.html#tooltips)** `js.bootstrap.Tooltip;`
  - **[Alerts](http://twitter.github.com/bootstrap/javascript.html#alerts)** `js.bootstrap.Alert;`
+ - **[Tabs](http://twitter.github.com/bootstrap/javascript.html#tabs)** `js.bootstrap.Tab;`
